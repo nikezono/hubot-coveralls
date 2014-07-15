@@ -1,0 +1,41 @@
+{
+  "name": "hubot-coveralls",
+  "private": false,
+  "version": "0.0.1",
+  "description": "Hubot script for Coveralls WebHook Notification.",
+  "main": "scripts/hubot-coveralls.coffee",
+  "scripts": {
+    "test": "mocha test",
+    "test-cover": "mocha test -R html-cov > coverage.html",
+    "test-coveralls": "mocha test --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coverasll.js"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "script",
+      "loader": "./node-loaders/coffee-script",
+      "data-cover-never": "node_modules"
+    }
+  },
+  "keywords": [
+    "hubot",
+    "coveralls",
+    "coverage",
+    "notification"
+  ],
+  "author": "nikezono",
+  "license": "MIT",
+  "dependencies": {
+    "hubot": "*"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "coffee-script": "^1.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nikezono/hubot-coveralls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikezono/hubot-coveralls/issues"
+  }
+}
