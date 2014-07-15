@@ -29,7 +29,8 @@
   },
   "devDependencies": {
     "blanket": "^1.1.6",
-    "coffee-script": "^1.7.1"
+    "coffee-script": "^1.7.1",
+    "coveralls": "^2.11.1"
   },
   "repository": {
     "type": "git",
