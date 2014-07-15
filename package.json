@@ -1,9 +1,9 @@
 {
   "name": "hubot-coveralls",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Hubot script for Coveralls WebHook Notification.",
-  "main": "scripts/hubot-coveralls.coffee",
+  "main": "lib/coveralls",
   "scripts": {
     "test": "mocha test",
     "test-cover": "mocha test -R html-cov > coverage.html",
@@ -11,7 +11,7 @@
   },
   "config": {
     "blanket": {
-      "pattern": "script",
+      "pattern":"lib",
       "loader": "./node-loaders/coffee-script",
       "data-cover-never": "node_modules"
     }
