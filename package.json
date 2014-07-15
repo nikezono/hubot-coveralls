@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha test",
     "test-cover": "mocha test -R html-cov > coverage.html",
-    "test-coveralls": "mocha test --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralll.js"
+    "test-coveralls": "mocha test --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
   },
   "config": {
     "blanket": {
