@@ -10,4 +10,5 @@ Coveralls.coffee
 module.exports = (robot) ->
 
   robot.router.post "/hubot/coveralls", (req, res) ->
-    robot.send {room: "#nikezonotify"}, "test"
+    res.end "200"
+
