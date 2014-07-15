@@ -1,11 +1,13 @@
 ###
 
- Coveralls.coffee
+Coveralls.coffee
 
+@nikezono
 
 ###
 
 
 module.exports = (robot) ->
 
-  msg.send "test"
+  robot.router.post "/hubot/coveralls", (req, res) ->
+    robot.send {room: "#nikezonotify"}, "test"
