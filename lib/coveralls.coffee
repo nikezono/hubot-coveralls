@@ -18,9 +18,9 @@ module.exports = (robot) ->
     coverTag  = "[#{req.params.covered_percent}%]"
 
     text = "#{changeTag}#{coverTag} #{req.params.repo_name} coverage is updated.
-commiter:#{req.params.commiter_name}
-branch:#{req.params.branch}
-Coverage Report By Coveralls(#{req.params.url})"
+ commiter:#{req.params.commiter_name}
+ branch:#{req.params.branch}
+ Coverage Report By Coveralls(#{req.params.url})"
 
     if config?
       envelope = config.envelope
