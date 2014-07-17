@@ -18,9 +18,10 @@ module.exports = (robot) ->
     coverTag  = if req.body.covered_percent isnt "" then "[#{req.body.covered_percent}%]" else ""
 
     text = "#{changeTag}#{coverTag} #{req.body.repo_name} coverage is updated.
- committer:#{req.body.committer_name}
- branch:#{req.body.branch}
- Coverage Report By Coveralls(#{req.body.url})"
+ Committer:#{req.body.committer_name}
+ Branch:#{req.body.branch}
+ Coveralls Builds:#{req.body.url}
+ Badge URL:#{req.body.badge_url}"
 
     if config?
       envelope = config.envelope
