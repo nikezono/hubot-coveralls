@@ -15,10 +15,10 @@ module.exports = (robot) ->
 
     change = req.body.coverage_change*1
     changeTag = if change isnt 0 then "[#{change}L]" else ""
-    coverTag  = "[#{req.body.covered_percent}%]"
+    coverTag  = if req.body.covered_percent isnt "" then "[#{req.body.covered_percent}%]" else ""
 
     text = "#{changeTag}#{coverTag} #{req.body.repo_name} coverage is updated.
- commiter:#{req.body.commiter_name}
+ commiter:#{req.body.committer_name}
  branch:#{req.body.branch}
  Coverage Report By Coveralls(#{req.body.url})"
 
