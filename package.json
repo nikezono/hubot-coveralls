@@ -1,7 +1,7 @@
 {
   "name": "hubot-coveralls",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hubot script for Coveralls WebHook Notification.",
   "main": "lib/coveralls",
   "scripts": {
